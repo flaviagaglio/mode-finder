@@ -1,64 +1,72 @@
-<h1 align="center">🎼 Mode Finder · by Flavia Gaglio</h1>
+<h1 align="center">🎼 MODE FINDER</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-9d4edd?style=flat-square" />
-  <img src="https://img.shields.io/badge/mobile-friendly-ff9e00?style=flat-square" />
-  <img src="https://img.shields.io/badge/made%20with-❤️-ff69b4?style=flat-square" />
+  <img src="https://img.shields.io/badge/versione-2.0.0-9d4edd?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/lingua-italiano-c77dff?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/responsive-sì-f72585?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/made%20with-❤️-ff9e00?style=for-the-badge" />
 </p>
 
 <p align="center">
-  Uno strumento semplice per esplorare tutti i modi musicali (ionico, dorico, frigio, lidio, misolidio, eolio, locrio) a partire da una nota fondamentale.<br>
-  <strong><a href="https://flaviagaglio.github.io/mode-finder">🌐 Provalo online</a></strong>
+  <strong>Mode Finder</strong> è uno strumento interattivo che, data una nota fondamentale, restituisce tutti i modi della scala maggiore (ionico, dorico, frigio, lidio, misolidio, eolio, locrio) con le relative note e la loro qualità (maggiore, minore, diminuito).  
+</p>
+
+<p align="center">
+  <a href="https://flaviagaglio.github.io/mode-finder/">🌐 Provalo online</a>
 </p>
 
 ---
 
 ## ✨ Caratteristiche
 
-- **12 note** (C, C#, D, …, B) selezionabili.
-- **Calcolo istantaneo** dei 7 modi della scala maggiore.
-- Ogni modo mostra il nome, la qualità (maggiore/minore) e la sequenza di note.
+- **12 note** selezionabili (Do, Do#, Re, …, Si) con un'interfaccia chiara.
+- **Calcolo istantaneo** dei 7 modi basato sugli intervalli Tono/Semitono (pattern fissi).
+- **Visualizzazione corretta** di diesis e bemolli in base alla tonalità scelta.
+- **Legenda colori**:
+  - Rosa → modo maggiore
+  - Arancio → modo minore
+  - Rosso → modo diminuito (Locrio)
+- **Completamente responsive** e ottimizzato per dispositivi touch.
 
 ---
 
-## 🎯 Come usarlo
+## 🎯 Come si usa
 
-1. Scegli la **fondamentale** tra i pulsanti circolari.
-2. Premi **“svela i modi”**.
-3. Scopri tutti i modi con le relative scale.
+1. Scegli la **nota fondamentale** cliccando su uno dei pulsanti circolari.
+2. Premi il pulsante **✨ mostra i modi ✨**.
+3. Sotto appaiono tutte le scale modali con le note corrispondenti.
 
-Esempio con **Do**:
+---
 
-| Modo     | Qualità  | Note                         |
-|----------|----------|------------------------------|
-| Ionico   | maggiore | C · D · E · F · G · A · B    |
-| Dorico   | minore   | D · E · F · G · A · B · C    |
-| Frigio   | minore   | E · F · G · A · B · C · D    |
-| Lidio    | maggiore | F · G · A · B · C · D · E    |
-| Misolidio| maggiore | G · A · B · C · D · E · F    |
-| Eolio    | minore   | A · B · C · D · E · F · G    |
-| Locrio   | minore   | B · C · D · E · F · G · A    |
+## 🧠 Come funziona (per i curiosi)
+
+Ogni modo è costruito applicando un **pattern fisso di toni (T) e semitoni (S)** a partire dalla nota fondamentale:
+
+- **Ionico**:   T – T – S – T – T – T – S
+- **Dorico**:   T – S – T – T – T – S – T
+- **Frigio**:   S – T – T – T – S – T – T
+- **Lidio**:    T – T – T – S – T – T – S
+- **Misolidio**: T – T – S – T – T – S – T
+- **Eolio**:    T – S – T – T – S – T – T
+- **Locrio**:   S – T – T – S – T – T – T
+
+La scelta tra **diesis e bemolli** segue il circolo delle quinte:  
+- Tonalità con diesis: Sol, Re, La, Mi, Si, Fa#, Do#  
+- Tonalità con bemolli: Fa, Sib, Mib, Lab, Reb, Solb
 
 ---
 
 ## 🛠️ Tecnologie utilizzate
 
 - **HTML5** – struttura semantica
-- **CSS3** – flexbox, grid, animazioni, glassmorphism
+- **CSS3** – flexbox, grid, animazioni, effetti di trasparenza
 - **JavaScript** – logica di calcolo e interattività
-- **Google Fonts** – Montserrat, Open Sans
-- **Font Awesome** (per icone decorative)
+- **Google Fonts** – Montserrat e Open Sans
+
+Nessuna dipendenza esterna: tutto è scritto in un unico file HTML per semplicità e velocità.
 
 ---
 
-## 📱 Responsive
-
-L’interfaccia è stata progettata *mobile-first*:
-- Pulsanti grandi
-- Griglia a una colonna su smartphone, due su tablet, tre su desktop
-- Testo sempre leggibile senza zoom
-
----
 
 ## 🤝 Contributi
 
